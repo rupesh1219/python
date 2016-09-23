@@ -3,8 +3,6 @@ sort a list using insertion sort algorithm and compute time for a huge list
 generate the list randomly using random module
 '''
 
-
-
 from datetime import datetime
 import random
 
