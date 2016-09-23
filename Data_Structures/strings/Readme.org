@@ -1,0 +1,35 @@
+* Strings
+
+** About the practice:
+   From the Coding bat problems, the below are practiced well with basic python programming mainly used funcitons in most of the problems.
+
+*** Below are the different type of problems solved in strings:
+
+   1. Basic strings exoploration in python
+   2. String Slicing
+   3. Traversal thriugh strings
+   4. looping through a string and counting
+   5. String comparision
+
+***   Miscillaneius things learnt during practing strings -
+
+   1. functions in python
+   2. emacs python mode execution
+   3. console input
+   4. exploration of search algorithms for search word problems.
+
+***   Should explore:
+
+   1. string methods
+   2. more on search words problmes - search algorithms
+   3. advanced way of solving the problems
+
+
+** A string is a sequence:
+   1. A string is a sequence of characters. Can be accessed using bracket operators.
+      name = 'fruit'
+      name[1] prints 'r'
+   2. Characters in a string are accessed using index values as shown above.
+
+** Strings are immutable:
+   1. Characters in a string are fixed they cannot be replaced i.e., strings are immutable where as lists are mutable which we will practicing in the lists section.
