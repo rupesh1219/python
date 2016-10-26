@@ -33,7 +33,7 @@ How do we avoid not creating a list and find the sum?
 print(sum(i for i in range(1000) if i%3 == 0 or i%5 ==0))
 
 def is_divisible_by_any(numerator,denominators):
-    for denominator in denominators:
+     for denominator in denominators:
         if numerator % denominator == 0:
             return True
         return False
