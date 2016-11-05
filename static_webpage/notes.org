@@ -1,0 +1,13 @@
+* Creating Web App from scratch using python flask and MySQL
+
+  Main goal of this exercise is to create a static web page using python and flask framework. Create a login page for the users and a mysql database to verify those users to login. Then create some buckets on the page and send data from web page to store the data in database.
+
+** Required techonologies
+   Python programming language, flask framework and MySQL database.
+
+** Introduction
+   Flask is a python framework for creating web applications.
+From the official site: it is a microframework for python based on Werkzeug, Jinja 2.
+
+** Setting up Flask
+
