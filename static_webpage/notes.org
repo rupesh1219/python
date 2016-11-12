@@ -9,5 +9,6 @@
    Flask is a python framework for creating web applications.
 From the official site: it is a microframework for python based on Werkzeug, Jinja 2.
 
-** Setting up Flask
+** Connecting to database and applying CRUD operations
+   SQLAlchemy: Used SQLALchmey for doing CRUD operations on the database in pythonic way.
 
