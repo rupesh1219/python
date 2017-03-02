@@ -1,0 +1,92 @@
+* Computer Science Fundamentals
+
+* Computational tenchiques
+
+** programming
+*** Read - read some very good programs witten by programmer
+*** write - practice writing programs
+*** Understand - understand the computational behaviour of system
+
+**** Think like a computer scientist
+     1. computational problem solving
+     2. Knowledge
+        - Declarative
+        - Imperative
+     3. fixed program computer
+        - calculator
+        - Turning Bombe - early computer designed to break codes
+     4. computer unit
+        - stored program computer, there is process in computer that will execute this program
+        - so what we will have inside that computer taht will execute this
+        - memory
+        - control unit
+        - ALU
+     5. Sequence of instrunctions together make a program
+        - given a fixed set of primitives, good programmer can program anything
+        - 6 primitives rule the world of programming, you  can program anything using those primitives
+     6. we need a language to describe these sequence of steps
+     7. Python
+        - high level or low level language(assembly programming laguage)
+          - how closer you are to the computer low level language
+          - abstract of low level language is high
+        - Interpreted vs compiled
+          - Interpreter directly apply on the code
+          - compiler scan through the code, check and creates an object program
+        - Python is a high level and general purpose, interpreted language
+     8. Syntax
+        - what are the legal expressions in this langauge
+     9. Static and Full Semantics
+        - which programs are meaningfull ( static semantics )
+        - what does the program mean( what's gonna happen when i run it - full senamtics)
+     10. Python will find one bug at a time - need to have some patience
+     11. Does it all run time in python
+     12. Good programming style - easy to spot sematics bugs
+
+**** Simple parts of python
+     1. Numbers - int, float are diff types
+     2. Strings - enclosed in quotes - type on thier own
+     3. Operations
+        - arithmatics ( +,-,*,/)
+        - expression and statements()
+        - division in python2 vs python3
+     4. Variables - to store things
+
+**** data structure
+     1. Values and type
+     2. combine in expressions: operand & operate
+     3. Interpreter evaluates and prints
+
+**** Type Conversion
+     1. str(3) + 'ab'
+     2. 3 + 'ab' - static semantic error ( operator was expecting some particular type)
+     3. Type checking
+        - Python is completely strong in type checking
+        - comparing strings and numbers in a strange way in python
+        - type discipline
+     4. Operator Precedence
+        - BODMAS rule for solving mathematical equations
+
+**** Variables
+     1. Assignment of values to variables
+     2. what's the type of the variable?
+        - it inherits from the value
+        - dynamic types
+          - it changes based on the current value
+          - dont chage types arbitrarily
+     3. where can we use them?
+        - any place its legal to use the value
+
+**** Statements
+     1. legals commands python can interpret
+        - print, assignment
+        - keywords that are excluded as variables in python like 'print'
+     2. Branching program
+        - something that can change order of statements based on some tests(usually value of varaible)
+     3. Conditional
+     4. Boolean combination
+        - and or not ( true or false)
+
+**** Computational techniques based on input
+
+**** Iteration, loops and recursions
+     1.
