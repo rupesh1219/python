@@ -478,4 +478,61 @@ n = int(input('enter the max len of list l:'))
 m = int(input('enter the max len of list p:'))
 
 l = [int(input('enter elems in to list l:')) for i in range(n)]
-p = [int(input('enter elems into list p:'))] for i in range(m)]
+p = [int(input('enter elems into list p:')) for i in range(m)]
+
+def diff_list():
+    o = []
+    q = []
+    for i in l:
+        if i in p:
+            o.append(i)
+    print(o)
+    for i, j in zip(l, p):
+        if i not in o:
+            q.append(i)
+        if j not in o:
+            q.append(j)
+    return q
+
+print(diff_list())
+
+########################################################################
+
+# write a program to access the index of the list
+
+def index_list(list, list_value):
+    return list.index(list_value)
+
+print(index_list([1,2,3],3))
+
+########################################################################
+
+# write a program to convert list of character into a string
+
+def list_string(list):
+    str = ''
+    l = list
+    print(l)
+    for i in range(len(l)):
+        str += l[i]
+    return str
+
+print(list_string(['r','u','p']))
+
+########################################################################
+
+# write a program to flatten the shallow list
+
+def shallow_list(list_name):
+    l = []
+    for i in list_name:
+        if isinstance(i,type(list_name)) is True:
+            print(i)
+            l.extend(shallow_list(i))
+            print(l)
+        else:
+            l.append(i)
+            print(l)
+    return l
+
+print(shallow_list([1,2,[3,4],[5,6,[7,8]]]))
