@@ -458,9 +458,24 @@ def list_entr():
 def shuffle_list():
     list = list_entr()
     l = []
-    m = random.sample(len(list), len(list))
+    m = random.sample(range(len(list)), len(list))
     for i in m:
         l.append(list[i])
     return l
 
 print(shuffle_list())
+
+########################################################################
+
+# generate all permutations of a given list
+
+
+########################################################################
+
+# python program to get the difference between two lists
+
+n = int(input('enter the max len of list l:'))
+m = int(input('enter the max len of list p:'))
+
+l = [int(input('enter elems in to list l:')) for i in range(n)]
+p = [int(input('enter elems into list p:'))] for i in range(m)]
