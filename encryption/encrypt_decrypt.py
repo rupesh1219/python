@@ -8,9 +8,9 @@ required packages:
 import os
 import gnupg
 
-gpg = gnupg.GPG(gnupghome = '/home/rupeshkepler/gpghome')
+gpg = gnupg.GPG(gnupghome = '/home/syz/gpghome')
 
-'''
+
 input_data = gpg.gen_key_input(
     name_email='xyz@gmail.com',
     passphrase='xxxxx')
@@ -36,11 +36,11 @@ with open('my-unencryptedfile','rb') as f:
     status = gpg.encrypt_file(
         f, recipients=['xyz@gmail.com'],
         output='my-encrypted.txt.gpg')
-'''
+
 
 # decrypt file
-with open('AXAEMRKT_DEXC7213_0000001_0000113.asc','rb') as f:
-    status = gpg.decrypt_file(f,passphrase = 'rupesh1219', output = 'AXAEMRKT_DEXC7213.pdf')
+with open('xyz.asc','rb') as f:
+    status = gpg.decrypt_file(f,passphrase = 'xxxxxx', output = 'syz.xlsx')
 
 print('Ok:', status.ok)
 print('status:', status.status)

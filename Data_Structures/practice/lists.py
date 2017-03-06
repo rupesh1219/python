@@ -536,3 +536,35 @@ def shallow_list(list_name):
     return l
 
 print(shallow_list([1,2,[3,4],[5,6,[7,8]]]))
+
+########################################################################
+
+# write a program to append the list to other list
+
+def append_list(list1, list2):
+    return list1 + list2
+
+print(append_list([1,2,3],['r','u','p']))
+
+########################################################################
+
+# write a program to check if the two lists are circularly identical
+
+# circularly identical means if the list is wrapped as a circle, and
+# both the lists are identical in this case, then lists are circularly
+# identical
+
+def circular_identical(list1, list2):
+
+########################################################################
+
+# write a program to return second smallest element in the list
+
+def second_min(list):
+    '''
+    sort the list and pick the
+    second element in the list
+    '''
+    for i in range(len(list)):
+        for j in range(i+1, len(list)):
+
