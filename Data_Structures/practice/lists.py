@@ -567,4 +567,86 @@ def second_min(list):
     '''
     for i in range(len(list)):
         for j in range(i+1, len(list)):
+            if list[i] > list[j]:
+                temp = list[i]
+                list[i] = list[j]
+                list[j] = temp
+        print(list)
+    return list[1]
 
+print(second_min([2,1,3,4,7]))
+
+########################################################################
+
+# get unique values from the give list
+
+def unique_values(list):
+    '''
+    get uniques values from the
+    given list
+    '''
+    l = []
+    for i in range(len(list)-1):
+        if list[i] not in list[i+1:]:
+            l.append(list[i])
+    return l
+
+print(unique_values([1,2,2,3,3,4]))
+
+########################################################################
+
+# write a python prgram to get the frequency of elements in a list
+
+def freq_list(list):
+    dict = {}
+    for i in list:
+        if i in dict:
+            dict[i] += 1
+        else:
+            dict[i] = 1
+    return dict
+
+print(freq_list([1,2,2,3,3,5]))
+
+########################################################################
+
+# write a python program to get the frequency of elements in a list
+# within a specified range
+
+def freq_list_range(list, min, max):
+    dict = {}
+    for i in list:
+        if i in dict and i >= min and i <= max:
+            dict[i] += 1
+        elif i >= min and i <= max:
+            dict[i] = 1
+    return dict
+
+print(freq_list_range([1,2,2,3,3,4,5,5,4,7,8], 3, 7))
+
+########################################################################
+
+# write a program to see if the list contains a sublist
+
+def list_sublist(list):
+    for i in list:
+        if isinstance(i, type(list)) == True:
+            print('list has a sublist')
+            break
+
+list_sublist([1,2,[1,2,3],4,5])
+
+########################################################################
+
+# write a program to generate all sublists of a list
+
+def list_sublists(list):
+    l = []
+    for i in list:
+        if isinstance(i, type(list)) == True:
+            l.append(i)
+    return l
+
+print(list_sublists([1,2,[3,4],6,[7,8,[9,8]]]))
+
+########################################################################
