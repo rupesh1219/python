@@ -650,3 +650,60 @@ def list_sublists(list):
 print(list_sublists([1,2,[3,4],6,[7,8,[9,8]]]))
 
 ########################################################################
+
+# write a program to find the prime numbers upto a specified number
+
+def prime_number(max):
+    import math
+    l = [2]
+    flag = True
+    for i in range(3, max):
+        for j in range(2, int(math.sqrt(max))+1):
+            if i % j == 0:
+                flag = False
+            if flag:
+                l.append(i)
+    return l
+
+print(prime_number(10))
+
+########################################################################
+
+# write a program to create a list as follows:
+# given list = [p,q]
+# n = 3
+# output list = [p1,q1,p2,q2,p3,q3]
+
+def generate_list(list, n):
+    l = []
+    for i in range(1,n+1):
+        for j in list:
+            l.append(j + str(i))
+    return l
+
+print(generate_list(['p','q'], 3))
+
+########################################################################
+
+# write a program to find the common elements from two lists
+
+def common_elems(list1, list2):
+    l = []
+    for i in range(len(list1)):
+        if list1[i] in list2:
+            l.append(list1[i])
+    return l
+
+print(common_elems([1,2,3],[3,4,5]))
+
+########################################################################
+
+# write a program to replace every nth value with n+1 the value in list
+
+def replace(list):
+    '''
+    replace nth value with
+    n+1 th value in the
+    list
+    '''
+    for i in range
