@@ -67,5 +67,31 @@ def exists_key(dict1,key):
 
 print(exists_key({1:3,3:4},4))
 
+########################################################################
+
+# write a program to iterate over dictionaries
+
+def iterate_dict(dict):
+    for k,v in dict.items():
+        print(k,v)
+    for k in  dict.keys():
+        print(k)
+    for v in dict.values():
+        print(v)
+
+iterate_dict({1:2,2:3})
+
+########################################################################
+
+# write a program to generate dictionary where value is the square of
+# key for a given range
 
 
+def square_dict(n):
+    dict = {}
+    for i in range(1,n+1):
+        dict[i] = i*i
+    return dict
+print(square_dict(5))
+
+########################################################################
