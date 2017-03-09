@@ -142,3 +142,32 @@ print(map_list([1,2], [3,4]))
 
 ########################################################################
 
+# write a program to sort a dictionary by key
+
+def sort_dict(dict):
+    list_tuples = sorted(dict.items())
+    dict2 = {}
+    for k in list_tuples:
+        for j in k:
+            dict2[j] = j+1
+    return dict2
+
+print(sort_dict({1:2,3:3,2:3}))
+
+########################################################################
+
+# write a program to get the max and min value in a dictionary
+
+def max_min_value(dict):
+    max = 0
+    min = 99999
+    for v in dict.values():
+        if v > max:
+            max = v
+        if v < min:
+            min = v
+    return max,min
+
+print(max_min_value({1:2,2:3,4:4}))
+
+########################################################################
