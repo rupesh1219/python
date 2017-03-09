@@ -1,4 +1,4 @@
-########################################################################
+1########################################################################
 # PRACTICE OF DICTIONARIES
 ########################################################################
 
@@ -95,3 +95,50 @@ def square_dict(n):
 print(square_dict(5))
 
 ########################################################################
+
+# write a python program to sum all items in a dictionary
+
+def sum_allitems(dict):
+    result = 0
+    for k,v in dict.items():
+        result += k+v
+    return result
+
+print(sum_allitems({1:3,2:4}))
+
+########################################################################
+
+# write a program to multiply all items in a given dictionary
+
+def mul_items(dict):
+    prod = 1
+    for k,v in dict.items():
+        prod *= (k*v)
+    return prod
+
+print(mul_items({1:3,3:3}))
+
+########################################################################
+
+# write a program to remove a key from dictionary
+
+def remove_key(dict,k):
+    dict.pop(k)
+    return dict
+
+print(remove_key({1:2,3:4},3))
+
+########################################################################
+
+# write a python program to map two lists into a dictionary
+
+def map_list(list1, list2):
+    dict = {}
+    for i,j in zip(list1, list2):
+        dict[i] = j
+    return dict
+
+print(map_list([1,2], [3,4]))
+
+########################################################################
+
