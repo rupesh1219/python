@@ -234,3 +234,29 @@ def unique_values(dict1):
 print(unique_values({1:3,2:3,3:4,5:6}))
 
 ########################################################################
+
+# write a program to create nested ditionary of keys from a list
+
+def nested_dict(list):
+    '''
+    list to nested dict keys
+    '''
+    dict = {}
+    for i in list:
+        dict[i] = dict[i+1]
+    return dict
+
+print(nested_dict([1,2,3]))
+
+########################################################################
+
+# write a python program to print the dictionary line by line
+
+
+def dict_line(dict):
+    for k,v in dict.items():
+        print(k,v)
+
+dict_line({1:3,3:2})
+
+########################################################################
