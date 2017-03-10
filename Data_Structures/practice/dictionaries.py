@@ -171,3 +171,66 @@ def max_min_value(dict):
 print(max_min_value({1:2,2:3,4:4}))
 
 ########################################################################
+
+# write a program to remove duplicates in a dictionary
+
+def remove_dup(dict):
+    '''
+    as dictionaries cannot have
+    duplicate keys and that means
+    identify duplicates in values
+    '''
+    dict1 = {}
+    for k,v in dict.items():
+        if v not in dict1.values():
+            dict1[k] = v
+    return dict1
+
+print(remove_dup({1:3,2:3,3:2,23:6}))
+
+########################################################################
+
+# check to see if dictionary is empty or not
+
+def empty_dict(dict):
+    if bool(dict) == False:
+        return 'dictionary is empty'
+    else:
+        return 'dictinoary is not empty'
+
+print(empty_dict({}))
+
+########################################################################
+
+# adding values for  common keys in dictioanries
+
+def adding_dict(dict1, dict2):
+    dict3 = {}
+    for k1,v1 in dict1.items():
+        for k2,v2 in dict2.items():
+            if k1 == k2:
+                dict3[k1] = v1+v2
+            else:
+                dict3[k1] = v1
+                dict3[k2] = v2
+    return dict3
+
+print(adding_dict({1:3,2:4,4:5}, {1:3,2:5,5:4}))
+
+########################################################################
+
+# print all unique values in a dictionary
+
+def unique_values(dict1):
+    '''
+    print unique values
+    '''
+    list = []
+    for k,v in dict1.items():
+        if v not in list:
+            list.append(v)
+    return list
+
+print(unique_values({1:3,2:3,3:4,5:6}))
+
+########################################################################
