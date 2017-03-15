@@ -125,3 +125,8 @@ def list_tuple(list):
 print(list_tuple([1,2,3]))
 
 ########################################################################
+
+# write a program to remove an item from tuple
+
+def remove_element(tuple):
+
