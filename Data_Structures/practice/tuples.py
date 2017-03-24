@@ -242,3 +242,17 @@ def list_tuples(list_items, replace_element):
 print(list_tuples([(1,2,3), (3,4,5), (5,6,7)], 9))
 
 ########################################################################
+
+# count the elements in a tuple until you see a tuple in tuple
+
+def tuple_tuple(tuple_items):
+    count = 0
+    for i in tuple_items:
+        if isinstance(i, tuple) is False:
+            count += 1
+        else:
+            return count
+
+print(tuple_tuple((1,2,3,(4,5),6)))
+
+########################################################################
