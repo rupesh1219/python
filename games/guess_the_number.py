@@ -11,7 +11,8 @@ import random
 
 def generate_random(min, max):
     generated = random.sample(range(min, max), 1)
-    return generated
+    for i in generated:
+        return i
 
 
 def user_guess():
