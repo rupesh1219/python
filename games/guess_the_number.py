@@ -25,8 +25,11 @@ def main(min, max):
     count = 0
     while(count < 3):
         guess = user_guess()
-        if abs(generated - guess) != 0:
-            print('then number is incorrect')
+        if abs(generated - guess) > generated:
+            print('the number is high')
+            count += 1
+        elif abs(generated - guess) < generated:
+            print('the number is low')
             count += 1
         else:
             print('hurray you have guessed the right number')
