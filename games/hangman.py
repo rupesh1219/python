@@ -1,53 +1,63 @@
-########################################################################
+###############################################################################
 # hangman game
 # given list of famous cities
 # guess the word by inputing the letters one by one
 # allow the user to input only limited inputs
-########################################################################
+###############################################################################
 
-list_of_famous_cities = ['newyork','california','texas','kansas','florida']
+
+###############################################################################
+# game steps:
+# welcome the user to the game
+# and introduce hime to the what part of game he is playing
+# then ask him to predict the n letter word city of tech
+# once that is predicted correct remove it from the list for a game
+# if given wrong inputs through to user this is wrong input
+# repeat the game until he wants to play if he doesnt want to play quit
+# if he continues quit the game after selecting all the cities
+# thank him for playing the game
+###############################################################################
+
+list_of_famous_cities = ['newyork', 'sanfranciso', 'chicago', 'dallas',
+                         'florida', 'seattle']
 
 
 def welcome():
     print('welcome to the hangman')
-    print('today you will guess the most beautiful cities')
+    print('today you will guess the top 7 tech cities')
 
 
-def ask_city_of_length():
+def city_of_length():
     '''
-    ask the user to predict
-    7 letter best city
+    from a dictionary where
+    the key is length and value
+    is city
     '''
-    list_lengths = []
+    print(list_of_famous_cities)
+    dict_items = {}
     for i in list_of_famous_cities:
-        list_lengths.append(len(i))
-    return list_lengths
-
-def questions():
-    '''
-    which category of question
-    will be asked to the user
-    '''
-    city_lengths = ask_city_of_length()
-    return city_length
+        dict_items[len(i)] = i
+    print(dict_items)
+    return dict_items
 
 
-def compare():
+def ask_question():
     '''
-    comparing the letter entered
-    to the word
+    predict the n letter city
     '''
-    return
+    city_lengths = city_of_length()
+    print(city_lengths)
+    counter = 0
+    while counter <= 10:
+        input_from_user = input('enter a length tech city')
+        if input_from_user in city_lengths.values():
+            return 'predicted correct tech city, you are fabulous'
+        else:
+            counter += 1
+            print('wrong answer')
+    else:
+        return 'you are hanged'
 
-def user_input():
-    '''
-    user input a letter
-    '''
-    return
 
-def wrong_input():
-    '''
-    wrong attempts will make
-    the user to exit the game
-    '''
-    return
+print(welcome())
+print(ask_question())
