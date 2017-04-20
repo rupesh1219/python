@@ -32,4 +32,4 @@ def move_zeros(lst):
                 lst[j+1] = temp
     return lst
 
-print(move_zeros([1,2,3,0,5,0,0,8,7,0]))
+print(move_zeros([1,2,3,0,5,0,0,8,7,5]))
