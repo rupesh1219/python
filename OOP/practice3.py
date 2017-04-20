@@ -14,3 +14,25 @@ class Two_methods():
 
 upper_string = Two_methods(input('enter a string:'))
 print(upper_string.put_string())
+
+
+########
+# OR
+########
+
+class Two_methods1():
+
+    def __init__(self):
+        self.str1 = ""
+
+    def get_string(self):
+        self.str1 = input('enter a string:')
+
+    def put_string(self):
+        return self.str1.upper()
+
+
+string_input = Two_methods1()
+string_input.get_string()
+put_string_out = string_input.put_string()
+print(put_string_out)
