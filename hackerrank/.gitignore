@@ -1,0 +1,3 @@
+# ignoring virtual env files
+
+venv/
