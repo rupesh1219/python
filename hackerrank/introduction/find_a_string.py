@@ -16,10 +16,9 @@ class Findsubstring():
         substring
         '''
         count = 0
-        for i in range(len(self.string)-len(self.substring)):
-            if self.substring in self.string:
+        for i in range(len(self.string)-len(self.substring)+1):
+            if self.string[i:i+len(self.substring)] == self.substring:
                 count += 1
-            i =
         return count
 
 
