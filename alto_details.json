@@ -1,0 +1,62 @@
+{ 
+  "employees":{
+    "1":{
+      "name":"Radha",
+      "designation": "Intern"
+    },
+    "2":{
+      "name":"Rupesh",
+      "designation": "SDE2"
+    },
+    "3":{
+      "name":"Anvesh",
+      "designation": "SDE"
+    },
+    "4":{
+      "name":"Rohith",
+      "designation": "SDE"
+    }
+  },
+  "tasks":{
+    "1" : {
+      "task_name":"reading_prescription",
+      "SLA": "20"
+    },
+    "2" : {
+      "task_name":"writing_prescription",
+      "SLA": "40"
+    },
+    "3" : {
+      "task_name":"delivering_prescription",
+      "SLA": "30"
+    },
+    "4": {
+      "task_name":"development",
+      "SLA":"60"
+    },
+    "5": {
+      "task_name":"add_prescription",
+      "SLA":"60"
+    }
+  },
+  "designations":{
+    "Intern":{
+    "tasks":[4]
+    },
+    "SDE":{
+    "tasks":[4]
+    },
+    "SDE2":{
+    "tasks":[4]
+    },
+    "Delivery_agent":{
+    "tasks":[3]
+    },
+    "Doctor":{
+    "tasks":[1,2]
+    },
+    "Patient":{
+    "tasks":[5]
+    }
+  }
+}
